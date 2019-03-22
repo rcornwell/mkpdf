@@ -32,42 +32,42 @@ The document must have:
     <PDFFile>
     </PDFFile>
 
-## <PDFFile>
+## \<PDFFile>
 
 PDFFile requires a name="" option, this is the name of the resulting PDF file.
 Optionally a title="" option can be given, to be the title displayed.
-PDFfile consists of a series of <section> tags. Optionally it can include a
-series of <image>, <attachment>, <text>, <portrat>, <landscape>, or <listing> items.
+PDFfile consists of a series of \<section> tags. Optionally it can include a
+series of \<image>, \<attachment>, \<text>, \<portrat>, \<landscape>, or \<listing> items.
 
-## <section>
+## \<section>
 
 Section requires a name="" option to be listing in the documents table of contents.
-Sections can include <image>, <attachment>, <text>, <portrat>, <landscape>, or <listing>
+Sections can include \<image>, \<attachment>, \<text>, \<portrat>, \<landscape>, or \<listing>
 items.
 
-## <image>
+## \<image>
 
 Image section allows for embedded PNG files. Name="" option is required to indicate
 the name of the PNG file to be included. This include:
 
-* <threshold>
-* <avg>
-* <contrast>
-* <unsharp>
-* <label>
-* <protrat>
-* <landscape>
-* <cw>
-* <ccw>
-* <rotate>
-* <flip>
-* <reverse>
-* <transpose>
-* <edgefill>
+* \<threshold>
+* \<avg>
+* \<contrast>
+* \<unsharp>
+* \<label>
+* \<protrat>
+* \<landscape>
+* \<cw>
+* \<ccw>
+* \<rotate>
+* \<flip>
+* \<reverse>
+* \<transpose>
+* \<edgefill>
 
 These tags cause various image processing functions to be run.
 
-## <text>
+## \<text>
 
 Text includes a text file with basic formating options. Name="" is required and indicates
 the name of the file to include. This can include an optional data element of "portrat" or
@@ -75,7 +75,7 @@ the name of the file to include. This can include an optional data element of "p
 
 ### text formating controls.
 
-* <#>   - Allows for Unicode control character to be include.
+* \<#>   - Allows for Unicode control character to be include.
 * \Aname\a   - Denotes an attached file.
 * \Utext\u   - Underlines the enclosed text.
 * \l      - indicates the last line of a page.
@@ -91,24 +91,24 @@ the name of the file to include. This can include an optional data element of "p
 * control-F - Skips to a new page.
 
 
-## <listing>
+## \<listing>
 
 This tag includes a listing file into the document. Name="" is required and indicates the 
 name of the file to include. Optionally linesperpage="#", the default is 55. This can
 include an optional data element of "portrat" or "landscape" to set the orientation of the
 included listing.
 
-## <attachment>
+## \<attachment>
 
 This tag can be added to any section and allows for the embedding of a file. Name="" is 
 required and indicates the name of the file to attach. Type="binary" or type="ascii" 
 indicates the type of the file to include. This file is compressed automatically by the embedding.
 
-## <portrat>
+## \<portrat>
 
 This sets the page layout to portrat mode for all tags below.
 
-## <landscape>
+## \<landscape>
 
 This set the page layout to landscape mode for all tags below.
 
