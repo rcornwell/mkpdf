@@ -697,7 +697,7 @@ PDFfile::convertText(char *name)
                        break;
             case '\f':
                        *q++ = '\0';
-                       if (&out[0] != '\0') {
+                       if (out[0] != '\0') {
                            strm->appendStr(out);
                            strm->appendCmd("Tj\n");
                            q = out;
